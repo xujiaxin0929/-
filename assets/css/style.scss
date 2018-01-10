@@ -1,0 +1,242 @@
+@import "reset";
+@import "config";
+//emInformation start
+#em-information {
+    width: 100%;
+    height: 100%;
+    padding: 0.32rem 0.31rem 0rem;
+    background-color: $bodyBgc;
+    .em-information-box {
+        width: 100%;
+        padding: 0 0.24rem;
+        background-color: $bodyContentBgc;
+        border-radius: 0.1rem;
+        -webkit-appearance: none;
+        box-shadow: 1rem 0rem 0.6rem -1.2rem #000, -1rem 0rem 0.6rem -1.2rem #000;
+        ul {
+            li {
+                display: block;
+                border-bottom: 0.01rem solid $bodyBgc;
+                line-height: 0.88rem;
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                p {
+                    display: block;
+                    float: left;
+                    color: $fontTitleColor;
+                    font-size: 0.28rem;
+                    line-height: 0.88rem;
+                }
+                span {
+                    display: block;
+                    float: right;
+                    color: $fontSpanColor;
+                    font-size: 0.26rem;
+                    line-height: 0.9rem;
+                }
+                a {
+                    display: block;
+                    float: right;
+                    font-size: 0.26rem;
+                    color: $blueColor;
+                    border: none;
+                    border: 0.01rem solid $blueColor;
+                    border-width: 0.01rem;
+                    text-align: center;
+                    line-height: 1;
+                    list-style: none;
+                    padding: 0.1rem 0.12rem;
+                    border-radius: 0.06rem;
+                    margin-top: 0.24rem;
+                    margin-left: 0.1rem;
+                    background-color: $bodyContentBgc;
+                }
+            }
+        }
+    }
+}
+
+//emInformation end
+//底部通用scss
+#common-footer-double {
+    @include doubleBtmStyle(50%);
+    .common_tabbar_now {
+        span {
+            color: $blueColor;
+        }
+    }
+}
+
+//firmwareUpdate start
+#fw-update {
+    width: 100%;
+    height: 100%;
+    padding: 0.32rem 0.31rem 0rem;
+    background-color: $bodyBgc;
+    .fw-update-box {
+        width: 100%;
+        padding: 0 0.24rem;
+        background-color: $bodyContentBgc;
+        border-radius: 0.1rem;
+        -webkit-appearance: none;
+        box-shadow: 1rem 0rem 0.6rem -1.2rem #000, -1rem 0rem 0.6rem -1.2rem #000;
+        ul {
+            li {
+                display: block;
+                border-bottom: 0.01rem solid $bodyBgc;
+                line-height: 0.88rem;
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                p {
+                    display: block;
+                    float: left;
+                    color: $fontTitleColor;
+                    font-size: 0.28rem;
+                    line-height: 0.88rem;
+                }
+                span {
+                    display: block;
+                    float: right;
+                    color: $fontSpanColor;
+                    font-size: 0.26rem;
+                    line-height: 0.9rem;
+                }
+            }
+        }
+    }
+    .fw-update-notes {
+        color: $fontSpanColor;
+        font-size: 0.26rem;
+        margin-top: 0.26rem;
+    }
+    .fw-update-btn {
+        width: 100%;
+        font-size: 0.36rem;
+        color: #fff;
+        background-color: $blueColor;
+        text-align: center;
+        padding: 0.26rem 0;
+        border: none;
+        border-radius: 0.1rem;
+        margin-top: 0.6rem;
+    }
+}
+
+//firmwareUpdate end
+//basicState start
+#bs-state {
+    width: 100%;
+    height: 100%;
+    padding: 0.32rem 0.31rem 0rem;
+    background-color: $bodyBgc;
+    .bs-state-box {
+        width: 100%;
+        padding: 0 0.24rem;
+        background-color: $bodyContentBgc;
+        border-radius: 0.1rem;
+        -webkit-appearance: none;
+        box-shadow: 1rem 0rem 0.6rem -1.2rem #000, -1rem 0rem 0.6rem -1.2rem #000;
+        ul {
+            li {
+                display: block;
+                border-bottom: 0.01rem solid $bodyBgc;
+                line-height: 0.88rem;
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                p {
+                    display: block;
+                    float: left;
+                    color: $fontTitleColor;
+                    font-size: 0.28rem;
+                    line-height: 0.88rem;
+                }
+                span {
+                    display: block;
+                    float: right;
+                    color: $fontSpanColor;
+                    font-size: 0.26rem;
+                    line-height: 0.9rem;
+                }
+                .bs-state-green{
+                    color: $greenColor;
+                }
+            }
+        }
+    }
+    .bs-state-state {
+        font-size: 0.28rem;
+        color: $fontTitleColor;
+        margin-top: 0.28rem;
+        margin-bottom: 0.22rem;
+        margin-left: 0.24rem;
+    }
+    .bs-state-progress-box {
+        width: 100%;
+        padding: 0.24rem;
+        border-radius: 0.1rem;
+        background-color: $bodyContentBgc;
+        -webkit-appearance: none;
+        box-shadow: 0.1rem 0.1rem 0.5rem -0.3rem #000;
+        ul {
+            li {
+                font-size: 0.26rem;
+                color: $fontSpanColor;
+                margin-right: 1.28rem;
+                float: left;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+        .bs-state-progress {
+            width: 100%;
+            border-radius: 0.1rem;
+            height: 0.36rem;
+            background: #ebebeb;
+            margin-top: 0.2rem;
+            .progress-inner {
+                border-top-left-radius: 0.1rem;
+                border-bottom-left-radius: 0.1rem;
+                width: 1%;
+                height: 100%;
+                background: $yellowColor;
+                transition: 2s;
+            }
+        }
+        .bs-state-prompt {
+            height: 0.26rem;
+            margin-top: 0.24rem;
+            span{
+                display: inline-block;
+                font-size: 0.26rem;
+                color: $fontSpanColor;
+                vertical-align: top;
+                line-height: 1;
+                float: left;
+                &:nth-child(3){
+                    margin-left: 0.54rem;
+                }
+            }
+            i{
+                vertical-align: top;
+                display: inline-block;
+                float: left;
+                width: 0.26rem;
+                height: 0.26rem;
+                margin-left: 0.08rem;
+                &:nth-child(2){
+                    background-color: $yellowColor;
+                }
+                &:nth-child(4){
+                    background-color: #ebebeb;
+                }
+            }
+            
+        }
+    }
+}
+
+//basicState end

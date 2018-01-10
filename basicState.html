@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>基本状态</title>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="bs-state" id="bs-state">
+        <div class="bs-state-box">
+            <ul>
+                <li class="clearfix">
+                    <p>设备在线状态</p>
+                    <span class="bs-state-green">在线</span>
+                </li>
+                <li class="clearfix">
+                    <p>未接来电数量</p>
+                    <span>0</span>
+                </li>
+                <li class="clearfix">
+                    <p>语音留言数量</p>
+                    <span>0</span>
+                </li>
+                <li class="clearfix">
+                    <p>WAN口IP地址</p>
+                    <span>192.168.123.1</span>
+                </li>
+                <li class="clearfix">
+                    <p>LAN口IP地址</p>
+                    <span>192.168.1.1</span>
+                </li>
+                <li class="clearfix">
+                    <p>VoIP Line1注册状态</p>
+                    <span class="bs-state-green">Registered 608</span>
+                </li>
+                <li class="clearfix">
+                    <p>VoIP Line2注册状态</p>
+                    <span class="bs-state-green">Register fail</span>
+                </li>
+            </ul>
+
+        </div>
+        <h4 class="bs-state-state">U盘状态</h4>
+        <div class="bs-state-progress-box clearfix">
+            <ul class="clearfix">
+                <li class="init_progress">共<i>32</i>G</li>
+                <li class="end_progress">已用空间<i>16</i>G</li>
+                <li>可用空间<i>16</i>G</li>
+            </ul>
+            <div class="bs-state-progress">
+                <div class="progress-inner" id="progress"></div>
+            </div>
+            <div class="bs-state-prompt">
+                <span>已用</span>
+                <i></i>
+                <span>可用</span>
+                <i></i>
+            </div>
+
+        </div>
+    </div>
+    <div class="common-footer-double" id="common-footer-double">
+        <div class="common-tabbar  clearfix ">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>设备信息</span>
+            </a>
+        </div>
+        <div class="common-tabbar common_tabbar_now clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>基本状态</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    (function () {
+        let $progress = document.getElementById('progress');
+        let progress = 1;
+        let init_progress = $('.init_progress i').html();
+        let end_progress = $('.end_progress i').html();;
+        let percentage = end_progress/init_progress * 100;
+        console.log(percentage)
+        let random = function (min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        };
+        // 跑进度
+        let onprogress = function () {
+            let timeout = random(300, 500);
+            setTimeout(function () {
+                if (window.loaded) {
+                    $progress.style.width = percentage+'%';
+                    return;
+                }
+                onprogress();
+            }, timeout);
+        };
+        onprogress();
+
+        window.onload = function () {
+            window.loaded = true;
+        };
+    })();
+
+</script>

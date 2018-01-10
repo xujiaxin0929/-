@@ -1,0 +1,37 @@
+    $blueColor: #017aff;
+    $redColor: red;
+    $greenColor:#54da3f;
+    $yellowColor:#ffd234;
+    $fontSpanColor: #999999;
+    $fontTitleColor:#333333;
+    $bodyBgc:#f5f5f5;
+    $bodyContentBgc:#fff;
+    $iconFontColor:#666666;
+    @mixin doubleBtmStyle ($bfb) {
+        width: 100%;
+        position: fixed;
+        bottom: 0rem;
+        left: 0rem;
+        background-color: $bodyContentBgc;
+        .common-tabbar {
+            float: left;
+            width: $bfb;
+            height: 100%;
+            text-align: center;
+            overflow: hidden;
+            padding-top: 0.2rem;
+            padding-bottom: 0.11rem;
+            img {
+                display: block;
+                width: 0.39rem;
+                height: auto;
+                margin: 0 auto;
+                margin-bottom: 0.12rem;
+            }
+            span {
+                display: block;
+                font-size: 0.2rem;
+                color: $iconFontColor;
+            }
+        }
+    }
