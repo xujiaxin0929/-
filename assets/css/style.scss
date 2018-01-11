@@ -58,9 +58,19 @@
 }
 
 //emInformation end
-//底部通用scss
+//底部通用scss double
 #common-footer-double {
     @include doubleBtmStyle(50%);
+    .common_tabbar_now {
+        span {
+            color: $blueColor;
+        }
+    }
+}
+
+//底部通用scss four
+#common-footer-fourth {
+    @include doubleBtmStyle(25%);
     .common_tabbar_now {
         span {
             color: $blueColor;
@@ -240,3 +250,40 @@
 }
 
 //basicState end
+//callRecord start
+#call-record{
+    background-color: $bodyContentBgc;
+    padding: rem(20) 0 rem(20);
+    .call-record-bookbar{
+        width: 100%;
+        // height: 0.98rem;
+        .call-record-bookbar-ul{
+            border: rem(2) solid $blueColor;
+            border-radius: rem(10);
+            width: rem(452);
+            text-align: center;
+            margin: 0 auto;
+            li{
+                display: inline-block;
+                width: 33%;
+                text-align: center;
+                border: none;
+                
+                font-size: rem(26);
+                // padding: rem(16) rem(27) rem(18) rem(23);
+                padding: rem(16) 0 rem(18);
+                color: $blueColor;
+                background-color: $bodyContentBgc; 
+                &:nth-child(2){
+                    border-left: rem(1) solid $blueColor;
+                    border-right: rem(1) solid $blueColor;
+                }
+            } 
+            .c-record-bkul-active{
+                background-color: $blueColor;
+                color: $bodyContentBgc;
+            }
+        }
+    }
+}
+//callRecord end

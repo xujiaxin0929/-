@@ -7,6 +7,12 @@
     $bodyBgc:#f5f5f5;
     $bodyContentBgc:#fff;
     $iconFontColor:#666666;
+    $rem:75;
+    $pre:-webkit-;
+    /*单位转换*/
+    @function rem($n) {
+        @return #{$n/$rem}rem;
+    }
     @mixin doubleBtmStyle ($bfb) {
         width: 100%;
         position: fixed;
@@ -19,19 +25,21 @@
             height: 100%;
             text-align: center;
             overflow: hidden;
-            padding-top: 0.2rem;
-            padding-bottom: 0.11rem;
+            padding-top: rem(20);
+            padding-bottom: rem(11);
             img {
                 display: block;
-                width: 0.39rem;
+                width: rem(39);
                 height: auto;
                 margin: 0 auto;
-                margin-bottom: 0.12rem;
+                margin-bottom: rem(12);
             }
             span {
                 display: block;
-                font-size: 0.2rem;
+                font-size: rem(20);
                 color: $iconFontColor;
-            }
+            } 
         }
     }
+
+    

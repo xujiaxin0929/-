@@ -1,28 +1,20 @@
-$(function () {
-    var oInnerWidth_font;
-    if (window.innerWidth) {
-        oInnerWidth_font = innerWidth;
-    } else {
-        oInnerWidth_font = document.documentElement.clientWidth || document.body.clientWidth;
-    }
-    if (oInnerWidth_font <= 991) {
-        document.documentElement.style.fontSize = innerWidth / 7.5 + "px";
-    } else {
-        document.documentElement.style.fontSize = "14px";
-    }
-
-    onresize = function () {
-        if (window.innerWidth) {
-            oInnerWidth_font = innerWidth;
+!function() {
+    var html = document.documentElement;
+    var setFontSize = function() {
+        var width = html.offsetWidth;
+        if(width <= 750) {
+            html.style.fontSize = width / 7.5+ 'px';
         } else {
-            oInnerWidth_font = document.documentElement.clientWidth || document.body.clientWidth;
+            html.style.fontSize = 100 + 'px';
         }
-        if (oInnerWidth_font <= 991) {
-            document.documentElement.style.fontSize = innerWidth / 7.5 + "px";
-        } else {
-            document.documentElement.style.fontSize = "14px";
-        }
-        console.log('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    };
+    var timer;
+    var setDelay = function() {
+        return clearTimeout(timer), (timer = setTimeout(setFontSize, 150));
     }
-
-})
+    window.addEventListener('pageshow', function(evt) {
+        return evt.persisted && setDelay();
+    });
+    window.addEventListener('resize', setDelay);
+    setFontSize();
+}();
