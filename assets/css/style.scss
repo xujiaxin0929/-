@@ -1,0 +1,817 @@
+@import "reset";
+@import "config";
+//emInformation start
+#em-information {
+    height: 100%;
+    padding: rem(32) rem(31) 0rem;
+    background-color: $bodyBgc;
+    .em-information-box {
+        padding: 0 rem(24);
+        background-color: $bodyContentBgc;
+        border-radius: rem(10);
+        -webkit-appearance: none;
+        box-shadow: rem(100) 0rem rem(60) rem(-120) #000, rem(-100) 0rem rem(60) rem(-120) #000;
+        ul {
+            li {
+                display: block;
+                border-bottom: rem(1) solid $bodyBgc;
+                line-height: rem(88);
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                p {
+                    display: block;
+                    float: left;
+                    color: $fontTitleColor;
+                    font-size: rem(28);
+                    line-height: rem(88);
+                }
+                span {
+                    display: block;
+                    float: right;
+                    color: $fontSpanColor;
+                    font-size: rem(26);
+                    line-height: rem(90);
+                }
+                a {
+                    display: block;
+                    float: right;
+                    font-size: rem(26);
+                    color: $blueColor;
+                    border: none;
+                    border: rem(1) solid $blueColor;
+                    border-width: rem(1);
+                    text-align: center;
+                    line-height: 1;
+                    list-style: none;
+                    padding: rem(10) rem(12);
+                    border-radius: rem(6);
+                    margin-top: rem(24);
+                    margin-left: rem(10);
+                    background-color: $bodyContentBgc;
+                }
+            }
+        }
+    }
+}
+
+//emInformation end
+//底部通用scss double
+#common-footer-double {
+    @include doubleBtmStyle(50%);
+    .common_tabbar_now {
+        span {
+            color: $blueColor;
+        }
+    }
+}
+
+//底部通用scss four
+#common-footer-fourth {
+    @include doubleBtmStyle(25%);
+    .common_tabbar_now {
+        span {
+            color: $blueColor;
+        }
+    }
+}
+
+//firmwareUpdate start
+#fw-update {
+    height: 100%;
+    padding: rem(32) rem(31) 0rem;
+    background-color: $bodyBgc;
+    .fw-update-box {
+        padding: 0 rem(24);
+        background-color: $bodyContentBgc;
+        border-radius: rem(10);
+        -webkit-appearance: none;
+        box-shadow: rem(100) 0rem rem(60) rem(-120) #000, rem(-100) 0rem rem(60) rem(-120) #000;
+        ul {
+            li {
+                display: block;
+                border-bottom: rem(1) solid $bodyBgc;
+                line-height: rem(88);
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                p {
+                    display: block;
+                    float: left;
+                    color: $fontTitleColor;
+                    font-size: rem(28);
+                    line-height: rem(88);
+                }
+                span {
+                    display: block;
+                    float: right;
+                    color: $fontSpanColor;
+                    font-size: rem(26);
+                    line-height: rem(90);
+                }
+            }
+        }
+    }
+    .fw-update-notes {
+        color: $fontSpanColor;
+        font-size: rem(26);
+        margin-top: rem(26);
+    }
+    .fw-update-btn {
+        width: 100%;
+        font-size: rem(36);
+        color: #fff;
+        background-color: $blueColor;
+        text-align: center;
+        padding: rem(26) 0;
+        border: none;
+        border-radius: rem(10);
+        margin-top: rem(60);
+    }
+}
+
+//firmwareUpdate end
+//basicState start
+#bs-state {
+    height: 100%;
+    padding: rem(32) rem(31) 0rem;
+    background-color: $bodyBgc;
+    .bs-state-box {
+        padding: 0 rem(24);
+        background-color: $bodyContentBgc;
+        border-radius: rem(10);
+        -webkit-appearance: none;
+        box-shadow: rem(100) 0rem rem(60) rem(-120) #000, rem(-100) 0 rem(60) rem(-120) #000;
+        ul {
+            li {
+                display: block;
+                border-bottom: rem(1) solid $bodyBgc;
+                line-height: rem(88);
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                p {
+                    display: block;
+                    float: left;
+                    color: $fontTitleColor;
+                    font-size: rem(28);
+                    line-height: rem(88);
+                }
+                span {
+                    display: block;
+                    float: right;
+                    color: $fontSpanColor;
+                    font-size: rem(26);
+                    line-height: rem(90);
+                }
+                .bs-state-green{
+                    color: $greenColor;
+                }
+            }
+        }
+    }
+    .bs-state-state {
+        font-size: rem(28);
+        color: $fontTitleColor;
+        margin-top: rem(28);
+        margin-bottom: rem(22);
+        margin-left: rem(24);
+    }
+    .bs-state-progress-box {
+        padding: rem(24);
+        border-radius: rem(10);
+        background-color: $bodyContentBgc;
+        -webkit-appearance: none;
+        box-shadow: rem(2) rem(2) rem(10) rem(0.01) #666666;
+        ul {
+            li {
+                font-size: rem(26);
+                color: $fontSpanColor;
+                margin-right: rem(128);
+                float: left;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+        .bs-state-progress {
+            width: 100%;
+            border-radius: rem(10);
+            height: rem(36);
+            background: #ebebeb;
+            margin-top: rem(20);
+            .progress-inner {
+                border-top-left-radius: rem(10);
+                border-bottom-left-radius: rem(10);
+                width: 1%;
+                height: 100%;
+                background: $yellowColor;
+                transition: 2s;
+            }
+        }
+        .bs-state-prompt {
+            height: rem(26);
+            margin-top: rem(24);
+            span{
+                display: inline-block;
+                font-size: rem(26);
+                color: $fontSpanColor;
+                vertical-align: top;
+                line-height: 1;
+                float: left;
+                &:nth-child(3){
+                    margin-left: rem(54);
+                }
+            }
+            i{
+                vertical-align: top;
+                display: inline-block;
+                float: left;
+                width: rem(26);
+                height: rem(26);
+                margin-left: rem(8);
+                &:nth-child(2){
+                    background-color: $yellowColor;
+                }
+                &:nth-child(4){
+                    background-color: #ebebeb;
+                }
+            }
+            
+        }
+    }
+}
+
+//basicState end
+//callRecord start
+#call-record{
+    .call-record-bookbar{
+        width: 100%;
+        background-color: $bodyContentBgc;
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+        // height: 0.98rem;
+        position: relative;
+        .call-record-bookbar-ul{
+            border: rem(2) solid $blueColor;
+            border-radius: rem(10);
+            width: rem(452);
+            text-align: center;
+            margin: 0 auto;
+            li{
+                display: inline-block;
+                width: 33%;
+                text-align: center;
+                border: none;
+                
+                font-size: rem(26);
+                // padding: rem(16) rem(27) rem(18) rem(23);
+                padding: rem(16) 0 rem(18);
+                color: $blueColor;
+                background-color: $bodyContentBgc; 
+                &:nth-child(2){
+                    border-left: rem(1) solid $blueColor;
+                    border-right: rem(1) solid $blueColor;
+                }
+            } 
+            .c-record-bkul-active{
+                background-color: $blueColor;
+                color: $bodyContentBgc;
+            }
+        }
+        .call-record-bookbar-del{
+            width: rem(45);
+            height: rem(40);
+            position: absolute;
+            right: rem(28);
+            top: rem(34);
+        }
+    }
+    .call-record-list{
+        display: none;
+        background-color: $bodyContentBgc;
+        margin-top: rem(20);
+        padding: rem(0) rem(28) rem(0) rem(64);
+        ul{
+            li{
+                border-bottom: rem(1) solid #f1f1f1;
+                padding-bottom: rem(24);
+                position: relative;
+                padding-top: rem(20);
+                &:nth-last-child(1){
+                    border: none;
+                }
+               .call-record-list-left{
+                   float: left;
+                   p{
+                    font-size: rem(30);
+                    color: $fontTitleColor;
+                    .call-state{
+                        width: rem(30);
+                        height: rem(31);
+                        position: absolute;
+                        top: rem(24);
+                        left: rem(-38);
+                    }
+                    span{
+                        display: inline-block;
+                        margin-top: 0;
+                        vertical-align: top;
+                    }
+                    .call-tape{
+                        width: rem(21);
+                        height: rem(34);
+                    }
+                }
+                span{
+                    display: block;
+                    margin-top: rem(14);
+                }
+               } 
+               .call-record-list-right{
+                   float: right;
+                   margin-top: rem(20);
+                   color: $fontSpanColor;
+                   .call-seected{
+                       width: rem(44);
+                       height: rem(44);
+                       vertical-align: middle;
+                       margin-left: rem(14);
+                       display: none;
+                   }
+                   .checkchange{
+                       display: none;
+                   }
+                   .inline-show{
+                       display: inline-block;
+                   }
+                   input[type="checkbox"] {
+                    -webkit-appearance: none;
+                    margin-left: rem(14);
+                  }
+                  input[type="checkbox"] {
+                    -webkit-appearance: none;
+                    background: #fff url(../img/ico-edit.png);
+                    background-size:100%;
+                    width: rem(44);
+                    height: rem(44);
+                    vertical-align: middle;
+                  }
+                  input[type="checkbox"]:checked {
+                    background: #fff url(../img/ico-micro.png) ;
+                    background-size:100%;
+                  }
+               }
+            }
+        }
+    }
+    .call-record-container{
+        height: rem(96);
+        background-color: $bodyContentBgc;
+        position: absolute;
+        bottom: rem(114);
+        width: 100%;
+        .call-record-container-btn{
+            text-align: center;
+            height: 100%;
+            line-height: rem(96);
+            display: none;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                
+                img{
+                    width: rem(34);
+                    height: rem(34);
+                    vertical-align: middle;
+                } 
+                span{
+                    display: inline-block;
+                    font-size: rem(30);
+                    color: $fontSpanColor;
+                    margin-left: rem(10);
+                }
+            }
+        }
+        .call-record-container-check{
+            text-align: center;
+            height: 100%;
+            width: 50%;
+            line-height: rem(96);
+            display: none;
+            float: left;
+                img{
+                    width: rem(34);
+                    height: rem(34);
+                    vertical-align: middle;
+                }
+                span{
+                    display: inline-block;
+                    font-size: rem(30);
+                    color: $fontSpanColor;
+                    margin-left: rem(10);
+                }
+        }
+    }
+}
+//callRecord end
+
+//callDetails start
+#call-details{
+    .call-details-head{
+        height: rem(362);
+        background: pink;
+        width: 100%;
+        position: relative;
+        .call-details-head-left{
+            position: absolute;
+            bottom: rem(0);
+            left: rem(32);
+            h2{
+                font-size: rem(48);
+                color: #fff;
+                margin-bottom: rem(24);
+            }
+            span{
+                display: block;
+                font-size: rem(36);
+                color: #fff;
+                margin-bottom: rem(30);
+            }
+        }
+        .call-details-head-right{
+            position: absolute;
+            bottom: rem(0);
+            right: rem(32);
+            a{
+                span{
+                    display: inline-block;
+                    font-size: rem(30);
+                    color: #fff;
+                    margin-bottom: rem(30);
+                    margin-left: rem(10);
+                }
+                img{
+                    width: rem(38);
+                    height: rem(38);
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+    .call-details-content{
+        padding: 0 rem(32);
+        background-color: $bodyContentBgc;
+        ul{
+            li{
+                padding: rem(30) 0;
+                border-bottom: rem(1) solid #f1f1f1;
+                
+                &:nth-last-child(1){
+                    border-bottom: none;
+                }
+                .call-details-content-box{
+                    .call-details-content-left{
+                        float: left;
+                        input[type="checkbox"] {
+                            -webkit-appearance: none;
+                          }
+                        input[type="checkbox"] {
+                            -webkit-appearance: none;
+                            background: #fff url(../img/ico-edit.png);
+                            background-size:100%;
+                            width: rem(44);
+                            height: rem(44);
+                            vertical-align: middle;
+                          }
+                        input[type="checkbox"]:checked {
+                            background: #fff url(../img/ico-micro.png) ;
+                            background-size:100%;
+                        }
+                         input{
+                            display: inline-block;
+                            // position: absolute;
+                            margin-top: rem(-66);
+                            margin-right: rem(26);
+                         } 
+                         .message{
+                             display: inline-block;
+                             h4{
+                                 font-size: rem(30);
+                                 color: $fontTitleColor;
+                             }
+                             p{
+                                 font-size: rem(30);
+                                 color: $fontSpanColor;
+                                 margin-top: rem(26);
+                             }
+                         }
+                    }
+                    .call-details-content-right{
+                        float: right;
+                        span{
+                            display: block;
+                            font-size: rem(30);
+                            color: $fontSpanColor;
+                            text-align: right;
+                        }
+                        .incoming{
+                            margin-top: rem(14);
+                            img{
+                                width: rem(30);
+                                height: rem(31);
+                                margin-right: rem(10);
+                            }
+                            span{
+                                display: inline-block;
+                                color: $iconFontColor;
+                                font-size: rem(30);
+                            }
+                        }
+                    }
+                }
+                .call-details-content-video{
+                    margin-top: rem(30);
+                    padding-left: rem(60);
+                    .voice{
+                        .gif{
+                            float: left;
+                            margin-right: rem(16);
+                            img{
+                                width: rem(34);
+                                height: rem(54);
+                                margin-top: rem(13);
+                            }
+                        }
+                        .right{
+                            float: left;
+                            position: relative;
+                            width: rem(570);
+                            height: rem(80);
+                            border-radius: rem(40);
+                            .click-audio{
+                                position: absolute;
+                                height: 100%;
+                                border-top-left-radius: rem(40);
+                                border-bottom-left-radius: rem(40);
+                                img{
+                                    float: left;
+                                    width: rem(26);
+                                    height: rem(36);
+                                    margin-left: rem(22);
+                                    margin-right: rem(6);
+                                    margin-top: rem(20);
+                                    vertical-align: middle;
+                                }
+                                span{
+                                    float: left;
+                                    display: block;
+                                    height: 100%;
+                                    line-height: rem(80);
+                                    color: #fff;
+                                    font-size: rem(26);
+                                }
+                            }
+                            .audio-time{
+                                position: absolute;
+                                right: rem(18);
+                                height: 100%;
+                                line-height: rem(80);
+                                font-size: rem(26);
+                                color: $fontSpanColor;
+                            }
+                            #touchline{
+                                height: rem(80);
+                                background-color: $bodyBgc;
+                                width: 100%;
+                                border-radius: rem(20);
+                                .circle{
+                                    width: 0;
+                                    height: rem(80);
+                                    background-color: $greenColor;
+                                    border-radius: rem(20);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .call-details-container{
+        height: rem(96);
+        background-color: $bodyContentBgc;
+        position: absolute;
+        bottom: rem(114);
+        width: 100%;
+        .call-details-container-check{
+            text-align: center;
+            height: 100%;
+            width: 50%;
+            line-height: rem(96);
+            float: left;
+                img{
+                    width: rem(34);
+                    height: rem(34);
+                    vertical-align: middle;
+                }
+                span{
+                    display: inline-block;
+                    font-size: rem(30);
+                    color: $fontSpanColor;
+                    margin-left: rem(10);
+                }
+        }
+    }
+}
+
+//callDetails end
+
+// phoneDial start
+#phone-dial{
+    position: absolute;
+    height: 100%;
+    background-color: $bodyContentBgc;
+    padding-top: rem(54);
+    .phone-dial-value{
+        font-size: rem(48);
+        color: $fontTitleColor;
+        text-align: center;
+        height: rem(46);
+    }
+    .phone-dial-add{
+        font-size: rem(36);
+        color: $fontTitleColor;
+        text-align: center;
+        margin-top: rem(34);
+        a{
+            color: $fontTitleColor;
+        }
+    }
+    ul{
+        margin-top: rem(56);
+        padding: 0 rem(102);
+        li{
+            width: rem(146);
+            height: rem(146);
+            border-radius: 50%;
+            margin-bottom: rem(26);
+            text-align: center;
+            float: left;
+            background-color: #e5e5e5;
+            &:nth-of-type(3n-1){
+                margin-left: rem(54);
+                margin-right: rem(54);
+            }
+            &:nth-of-type(10){
+                p{
+                    margin-top: 0;
+                    line-height: rem(146);
+                }       
+            }
+            &:nth-of-type(12){
+                p{
+                    margin-top: 0;
+                    line-height: rem(146);
+                }       
+            }
+            p{
+                font-size: rem(50);
+                color: #000;
+                margin-top: rem(30);
+                
+            }
+            span{
+                font-size: rem(14);
+                color: #000;
+            }
+        }
+    }
+    .phone-dial-call{
+        position: relative;
+        .phone-dial-call-btn{
+            // display: inline-block;
+            width: rem(146);
+            height: rem(146);
+            border-radius: 50%;
+            background-color: #4cd964;
+            margin: 0 auto;
+            text-align: center;
+            line-height: rem(186);
+            img{
+                width: rem(62);
+                height: rem(62);
+            }
+        }
+        .phone-dial-call-del{
+            position: absolute;
+            right: rem(144);
+            top: rem(40);
+            width: rem(50);
+            height: rem(50);
+            border-radius: rem(15);
+            float: right;
+            background-color: #e5e5e5;
+            .phone-dial-call-del-box{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .phone-dial-call-triangle{
+                    position: absolute;
+                    border-width:rem(25) rem(25) rem(25) 0;
+                    border-style:solid;
+                    border-color:transparent #e5e5e5 transparent transparent;
+                    left: rem(-15);
+                    top: rem(0);
+                }
+                .phone-dial-call-fork{
+                    text-align: center;
+                    font-size: rem(24);
+                    line-height: rem(50);
+                    font-weight: 600;
+                    color: #000;
+                }
+            }
+        }
+    }
+    .phone-dial-model{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+    .phone-dial-model-wait{
+        width: rem(560);
+        height: rem(290);
+        line-height: rem(290);
+        text-align: center;
+        font-size: rem(34);
+        color: $fontTitleColor;
+        background-color: $bodyContentBgc;
+        border-radius: rem(10);
+        z-index: 2;
+        position: fixed;
+        top: 30%;
+        left: 14%;
+        display: none;
+    }
+    .phone-dial-model-call{
+        width: rem(560);
+        height: rem(290);
+        background-color: $bodyContentBgc;
+        border-radius: rem(10);
+        z-index: 2;
+        position: fixed;
+        top: 30%;
+        left: 14%;
+        display: none;
+        // padding-bottom: rem(26);
+        .model-call-title{
+            
+            text-align: center;
+            height: rem(130);
+            margin-top: rem(58);
+            margin-bottom: rem(36);
+            h2{
+                font-size: rem(34);
+                color: #000;
+            }
+            p{
+                font-size: rem(28);
+                color: $fontSpanColor;
+                margin-top: rem(32);
+                
+            }
+        }
+        .model-call-confirm{
+            border-top: rem(1) solid #d2d3d5;
+            // padding-top: rem(32);
+            div{
+                width: 49%;
+                text-align: center;
+                font-size: rem(34);
+                line-height: rem(64);
+                
+                height: rem(64);
+            }
+            .cancle{
+                color: #000;
+                float: left;
+                border-right: rem(1) solid #d2d3d5;
+                
+            }
+            .confirm{
+                color: #00c200;
+                float: right;
+            }
+
+        }
+    }
+
+}
+// phoneDial end

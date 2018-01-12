@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>话机拨号</title>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/js/flexible_css.js"></script>
+    <script src="assets/js/flexible.js"></script>
+    <!-- <script src="assets/js/common.js"></script> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="phone-dial" id="phone-dial">
+        <div class="phone-dial-value"></div>
+        <p class="phone-dial-add">
+            <a href="#">添加号码</a>
+        </p>
+        <ul class="clearfix phone-dial-list">
+            <li class="pushed1">
+                <p>1</p>
+            </li>
+            <li class="pushed2">
+                <p>2</p>
+                <span>A&nbspB&nbspC</span>
+            </li>
+            <li class="pushed3">
+                <p>3</p>
+                <span>D&nbspE&nbspF</span>
+            </li>
+            <li class="pushed4">
+                <p>4</p>
+                <span>G&nbspH&nbspI</span>
+            </li>
+            <li class="pushed5">
+                <p>5</p>
+                <span>J&nbspK&nbspL</span>
+            </li>
+            <li class="pushed6">
+                <p>6</p>
+                <span>M&nbspN&nbspO</span>
+            </li>
+            <li class="pushed7">
+                <p>7</p>
+                <span>P&nbspQ&nbspR&nbsp</span>
+            </li>
+            <li class="pushed8">
+                <p>8</p>
+                <span>T&nbspU&nbspV</span>
+            </li>
+            <li class="pushed9">
+                <p>9</p>
+                <span>W&nbspX&nbspY&nbspZ</span>
+            </li>
+            <li class="pushedasterisk">
+                <p>*</p>
+            </li>
+            <li class="pushed0">
+                <p>0</p>
+                <span>+</span>
+            </li>
+            <li class="pushednumber">
+                <p>#</p>
+            </li>
+        </ul>
+        <div class="phone-dial-call">
+            <div class="phone-dial-call-btn">
+                <img src="assets/img/phone-dial-call-btn.png" alt="">
+            </div>
+            <div class="phone-dial-call-del">
+                <div class="phone-dial-call-del-box">
+                    <div class="phone-dial-call-triangle"></div>
+                    <div class="phone-dial-call-fork">
+                        X
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phone-dial-model"></div>
+        <div class="phone-dial-model-call">
+            <div class="model-call-title">
+                <h2>拨号</h2>
+                <p>是否拨号</p>
+            </div>
+            <div class="model-call-confirm clearfix">
+                <div class="cancle">
+                    取消
+                </div>
+                <div class="confirm">
+                    确认
+                </div>
+            </div>
+        </div>
+        <div class="phone-dial-model-wait">
+            设备连接中
+        </div>
+    </div>
+    <div class="common-footer-fourth" id="common-footer-fourth">
+        <div class="common-tabbar  clearfix ">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>电话本</span>
+            </a>
+        </div>
+        <div class="common-tabbar common_tabbar_now clearfix">
+            <a href="callRecord.html">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话记录</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>语音留言</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话录音</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    (function () {
+        /*
+       var length;
+       init()
+       del()
+       var pd = {
+           apendNum: function (num) {
+               if (length == num) {
+                   let nbsp = $('.phone-dial-value').text();
+                   let nbspAdd = nbsp + '&nbsp';
+                   $('.phone-dial-value').html(nbspAdd);
+               }
+           }
+       }
+       function add() {
+           length = $('.phone-dial-value').text().length;
+           pd.apendNum(3);
+           pd.apendNum(7);
+       }
+       function init() {
+
+           $('.phone-dial-list li p').on('click', function () {
+               add();
+               let num = $(this).text();
+               $('.phone-dial-value').append(num);
+           })
+       }
+       function del() {
+           $('.phone-dial-call-del').on('click', function () {
+               let nbsp = $('.phone-dial-value').text();
+               console.log(nbsp)
+               newnbsp = nbsp.substring(0, nbsp.Length - 1);
+               console.log(newnbsp)
+               $('.phone-dial-value').html(newnbsp);
+           })
+       }
+       */
+
+        $('.phone-dial-call-del').click(function () {
+            var numbers = $('.phone-dial-value').text();
+            var numbers2 = $('.phone-dial-value').text().length;
+            $('.phone-dial-value').text(numbers.substr(0, numbers2 - 1));
+        });
+        /* Pusher */
+        var pusher = {
+            number: function (num) {
+                $('.pushed' + num + '').click(function () {
+                    var length = $('.phone-dial-value').text().length;
+                    console.log(length)
+                    if (length == 3) {
+                        let nbsp = $('.phone-dial-value').text();
+                        let nbspAdd = nbsp + '&nbsp';
+                        $('.phone-dial-value').html(nbspAdd);
+                    }
+                    if (length == 7) {
+                        let nbsp = $('.phone-dial-value').text();
+                        let nbspAdd = nbsp + '&nbsp';
+                        $('.phone-dial-value').html(nbspAdd);
+                    }
+                    $('.phone-dial-value').append('' + num + '');
+                });
+            }
+        }
+        pusher.number(1);
+        pusher.number(2);
+        pusher.number(3);
+        pusher.number(4);
+        pusher.number(5);
+        pusher.number(6);
+        pusher.number(7);
+        pusher.number(8);
+        pusher.number(9);
+        pusher.number(0);
+        $('.pushedasterisk').click(function () {
+            $('.phone-dial-value').append('*');
+        });
+        $('.pushednumber').click(function () {
+            $('.phone-dial-value').append('#');
+        });
+
+        $('.phone-dial-call-btn').on('click', function () {
+            $('.phone-dial-model').addClass('show');
+            $('.phone-dial-model-call').addClass('show');
+        });
+        $('.model-call-confirm .cancle').on('click', function () {
+            $('.phone-dial-model').removeClass('show');
+            $('.phone-dial-model-call').removeClass('show');
+        })
+        $('.model-call-confirm .confirm').on('click', function () {
+            checkMobile();
+        })
+
+        // function checkMobile() {
+        //     var sMobile = $('.phone-dial-value').text();
+        //     var re = sMobile.replace(/\s+/g, "");
+        //     if (!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(re))) {
+        //         alert("请输入正确的手机号");
+        //         return false;
+        //     } else {
+        //         $('.phone-dial-model-call').removeClass('show');
+        //         $('.phone-dial-model-wait').addClass('show');
+        //     }
+        // }
+
+        function checkMobile() {
+            var sMobile = $('.phone-dial-value').text();
+            var re = sMobile.replace(/\s+/g, "");
+            var isPhone = /^([0-9]{3,4}-)?[0-9]{7,8}$/;
+            var isMob = /^((\+?86)|(\+86))?(13[012356789][0-9]{8}|15[012356789][0-9]{8}|18[02356789][0-9]{8}|147[0-9]{8}|1349[0-9]{7})$/;
+            
+            if (isMob.test(re) || isPhone.test(re)){
+                $('.phone-dial-model-call').removeClass('show');
+                $('.phone-dial-model-wait').addClass('show');
+            }
+            else {
+                alert("请输入正确的手机号");
+                return false;
+            }
+        }
+
+    })();
+</script>

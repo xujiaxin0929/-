@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>通话记录</title>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/js/flexible_css.js"></script>
+    <script src="assets/js/flexible.js"></script>
+    <!-- <script src="assets/js/common.js"></script> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="call-record" id="call-record">
+        <div class="call-record-bookbar ">
+            <ul class="call-record-bookbar-ul clearfix">
+                <li class="c-record-bkul-active">所有通话
+                    <li>未接来电
+                        <li>陌生号码</li>
+            </ul>
+            <img src="./assets/img/ico-sound.png" class="call-record-bookbar-del" alt="">
+        </div>
+        <div class="call-record-list show">
+            <ul>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-sound.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="./assets/img/ico-micro.png" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="1" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-missed.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="2" class="checkchange ">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-missed.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="3" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-answer.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="4" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-answer.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="5" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-answer.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="6" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="call-record-list">
+            <ul>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-missed.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="2" class="checkchange ">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-missed.png" alt="" class="call-state">
+                            <span>王先生</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="3" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="call-record-list">
+            <ul>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-sound.png" alt="" class="call-state">
+                            <span>未知用户</span>
+                            <img src="./assets/img/ico-micro.png" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="1" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-missed.png" alt="" class="call-state">
+                            <span>未知用户</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="2" class="checkchange ">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="call-record-list-left">
+                        <p>
+                            <img src="./assets/img/ico-missed.png" alt="" class="call-state">
+                            <span>未知用户</span>
+                            <img src="" alt="" class="call-tape">
+                        </p>
+                        <span>
+                            17600987890
+                        </span>
+                    </div>
+                    <div class="call-record-list-right">
+                        2017/12/19
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="3" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="call-record-container clearfix">
+            <div class="call-record-container-btn show">
+                <a href="phoneDial.html">
+                    <img src="./assets/img/ico-sound.png" alt="">
+                    <span>话机拨号</span>
+                </a>
+            </div>
+            <div class="call-record-container-check call-record-container-del">
+                <img src="./assets/img/ico-sound.png" alt="">
+                <span>删除</span>
+            </div>
+            <div class="call-record-container-check call-record-container-all">
+                <img src="./assets/img/ico-sound.png" alt="">
+                <span>全选</span>
+            </div>
+        </div>
+    </div>
+    <div class="common-footer-fourth" id="common-footer-fourth">
+        <div class="common-tabbar  clearfix ">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>电话本</span>
+            </a>
+        </div>
+        <div class="common-tabbar common_tabbar_now clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话记录</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>语音留言</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话录音</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    (function () {
+        let bookbarDel = $('.call-record-bookbar-del');
+        let callSeected = $('.call-seected');
+        let checkChange = $('.checkchange');
+        let containerBtn = $('.call-record-container-btn');
+        let containerCheck = $('.call-record-container-check');
+        let containerAll = $(".call-record-container-all");
+        let containerDle = $('.call-record-container-del');
+        bookbarDel.on('click', function () {
+            callSeected.toggleClass("inline-show");
+            checkChange.toggleClass("inline-show");
+            containerBtn.toggleClass("show");
+            containerCheck.toggleClass("show");
+        })
+        containerAll.on('click', function () {
+            $(".call-record-list-right :checkbox").prop("checked", true);
+        })
+
+        containerDle.on('click', function () {
+            chkRemove()
+        });
+
+        function chkRemove() { 
+            let chk_value = [];
+            $('input[name="check"]:checked').each(function () {
+                chk_value.push($(this).val());
+            });
+            alert(chk_value.length == 0 ? '您还没有选择任何内容！' : chk_value);
+        }
+
+        $('.call-record-bookbar-ul li').on('click',function(){
+            const index = $(this).index();
+            const finalIndex = index;
+            console.log(finalIndex);
+            $(this).addClass('c-record-bkul-active').siblings().removeClass('c-record-bkul-active')
+            $('.call-record-list').eq(finalIndex).addClass('show').siblings().removeClass('show');
+        })
+
+    })();
+</script>
