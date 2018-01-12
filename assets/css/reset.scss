@@ -84,10 +84,10 @@ html{
     background-color: #f5f5f5;
 }
 .show{
-    display: block;
+    display: block !important;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 .active{
     color:#017aff;

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>通话记录</title>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/js/flexible_css.js"></script>
+    <script src="assets/js/flexible.js"></script>
+    <!-- <script src="assets/js/common.js"></script> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="call-details" id="call-details">
+        <div class="call-details-head clearfix">
+            <div class="call-details-head-left">
+                <h2>17202345890</h2>
+                <span>宋先生</span>
+            </div>
+            <div class="call-details-head-right">
+                <a href="">
+                    <img src="./assets/img/ico-sound.png" alt="">
+                    <span>话机拨号</span>
+                </a>
+            </div>
+        </div>
+        <div class="call-details-content">
+            <ul>
+                <li class="clearfix">
+                    <div class="call-details-content-box clearfix">
+                        <div class="call-details-content-left">
+                            <label>
+                                <input type="checkbox" name="check" value="1" class="checkchange">
+                            </label>
+                            <div class="message">
+                                <h4>2017/12/19</h4>
+                                <p>10:23</p>
+                            </div>
+                        </div>
+                        <div class="call-details-content-right">
+                            <span>59秒钟</span>
+                            <div class="incoming">
+                                <img src="./assets/img/ico-sound.png" alt="">
+                                <span>呼入电话</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-details-content-video">
+                        <div class="voice clearfix">
+                            <div class="gif">
+                                <img id="images" src="./assets/img/ico-micro.png" alt="" onclick="">
+                                <audio id='audio' src="./assets/video/ceshi.mp3" hidden="true"></audio>
+                            </div>
+                            <div class="right">
+                                <div class="click-audio clearfix">
+                                    <img src="./assets/img/ico-micro.png" alt="">
+                                    <span>点击播放</span>
+                                </div>
+                                <div class="audio-time">
+                                    <span>16'</span>
+                                </div>
+                                <div id="touchline" class="speed">
+                                        <div class="circle">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                        <div class="call-details-content-box clearfix">
+                            <div class="call-details-content-left">
+                                <label>
+                                    <input type="checkbox" name="check" value="2" class="checkchange">
+                                </label>
+                                <div class="message">
+                                    <h4>2017/12/19</h4>
+                                    <p>10:23</p>
+                                </div>
+                            </div>
+                            <div class="call-details-content-right">
+                                <span>59秒钟</span>
+                                <div class="incoming">
+                                    <img src="./assets/img/ico-sound.png" alt="">
+                                    <span>呼入电话</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                            <div class="call-details-content-box clearfix">
+                                <div class="call-details-content-left">
+                                    <label>
+                                        <input type="checkbox" name="check" value="3" class="checkchange">
+                                    </label>
+                                    <div class="message">
+                                        <h4>2017/12/19</h4>
+                                        <p>10:23</p>
+                                    </div>
+                                </div>
+                                <div class="call-details-content-right">
+                                    <span>59秒钟</span>
+                                    <div class="incoming">
+                                        <img src="./assets/img/ico-sound.png" alt="">
+                                        <span>呼入电话</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+        <div class="call-details-container clearfix">
+            <div class="call-details-container-check call-details-container-del">
+                <img src="./assets/img/ico-sound.png" alt="">
+                <span>删除</span>
+            </div>
+            <div class="call-details-container-check call-details-container-all">
+                <img src="./assets/img/ico-sound.png" alt="">
+                <span>全选</span>
+            </div>
+        </div>
+    </div>
+    <div class="common-footer-fourth" id="common-footer-fourth">
+        <div class="common-tabbar  clearfix ">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>电话本</span>
+            </a>
+        </div>
+        <div class="common-tabbar common_tabbar_now clearfix">
+            <a href="callRecord.html">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话记录</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>语音留言</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话录音</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>  
+    $(document).ready(function () {
+
+        var audio = document.getElementById("audio");
+        $(".click-audio").on('click', function () {
+            if (audio.paused) {
+                Play();
+            } else {
+                Pause();
+            }
+        })
+        var isTouch = false;
+
+        var lineStart = $("#touchline").offset().left;
+        var lineWidth = $("#touchline").width();
+
+        //监听音频播放完毕事件  
+        audio.addEventListener('ended', function () {
+            
+            $(".circle").css("width", 0);
+        }, false);
+
+        function Play() {
+            audio.play();
+            TimeSpan();
+        } 
+
+        function Pause() {
+            audio.pause();
+            
+        }
+
+        function TimeSpan() {
+
+            setInterval(function () {
+                var currentTime = audio.currentTime;
+                var timeAll = audio.duration;
+                var ProcessNow = (currentTime / timeAll) * 100 + '%';
+                $(".circle").css("width", ProcessNow);
+                var timeAllFm = parseInt(TimeAll());
+                var timecurrent = parseInt(audio.currentTime);
+                var timeReduce = timeAllFm - timecurrent;
+                $('.audio-time > span').html(timeReduce + " ' ");
+                //触发条件停止循环，然后将时间和进度条初始化  
+                if (currentTime >= timeAll) {
+                    $('.audio-time > span').html(timeAllFm + " ' ");
+                    $(".circle").css("width", 0);
+                    clearInterval(interval);
+                }
+            }, 1000);
+        }
+        function TimeAll() {
+            return audio.duration;
+        }
+        //手势监听事件touchline  
+        var touchline = document.getElementById("touchline");
+        touchline.addEventListener('touchstart', function (evt) {
+            if (audio.pause || audio.ended) {
+                Play();
+            }
+            var touch = evt.touches[0];
+            x = parseInt(touch.pageX);
+            if (x < lineStart) {
+                x = lineStart;
+            }
+            var scale = (x - lineStart) / lineWidth;
+            audio.currentTime = scale * audio.duration;
+        }, false);
+
+
+
+    })  
+</script>
+<script>
+    (function () {
+        let containerAll = $(".call-details-container-all");
+        let containerDle = $('.call-details-container-del');
+        containerAll.on('click', function () {
+            $(".call-details-content :checkbox").prop("checked", true);
+        })
+
+        containerDle.on('click', function () {
+            chkRemove()
+        });
+
+        function chkRemove() { 
+            let chk_value = [];
+            $('input[name="check"]:checked').each(function () {
+                chk_value.push($(this).val());
+            });
+            alert(chk_value.length == 0 ? '您还没有选择任何内容！' : chk_value);
+        }
+
+    })();
+</script>
