@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <title>通话详情</title>
+    <title>留言详情</title>
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/js/flexible_css.js"></script>
     <script src="assets/js/flexible.js"></script>
@@ -18,24 +18,24 @@
 </head>
 
 <body>
-    <div class="call-details" id="call-details">
-        <div class="call-details-head clearfix">
-            <div class="call-details-head-left">
+    <div class="details-message" id="details-message">
+        <div class="details-message-head clearfix">
+            <div class="details-message-head-left">
                 <h2>17202345890</h2>
                 <span>宋先生</span>
             </div>
-            <div class="call-details-head-right">
+            <div class="details-message-head-right">
                 <a href="phoneDial.html">
                     <img src="./assets/img/ico-sound.png" alt="">
                     <span>话机拨号</span>
                 </a>
             </div>
         </div>
-        <div class="call-details-content">
+        <div class="details-message-content">
             <ul>
                 <li class="clearfix">
-                    <div class="call-details-content-box clearfix">
-                        <div class="call-details-content-left">
+                    <div class="details-message-content-box clearfix">
+                        <div class="details-message-content-left">
                             <label>
                                 <input type="checkbox" name="check" value="1" class="checkchange">
                             </label>
@@ -44,7 +44,7 @@
                                 <p>10:23</p>
                             </div>
                         </div>
-                        <div class="call-details-content-right">
+                        <div class="details-message-content-right">
                             <span>59秒钟</span>
                             <div class="incoming">
                                 <img src="./assets/img/ico-sound.png" alt="">
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="call-details-content-video">
+                    <div class="details-message-content-video">
                         <div class="voice clearfix">
                             <div class="gif">
                                 <img id="images" src="./assets/img/ico-micro.png" alt="" onclick="">
@@ -67,64 +67,14 @@
                                     <span>16'</span>
                                 </div>
                                 <div id="touchline" class="speed">
-                                        <div class="circle">
-                                        </div>
+                                    <div class="circle">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="clearfix">
-                        <div class="call-details-content-box clearfix">
-                            <div class="call-details-content-left">
-                                <label>
-                                    <input type="checkbox" name="check" value="2" class="checkchange">
-                                </label>
-                                <div class="message">
-                                    <h4>2017/12/19</h4>
-                                    <p>10:23</p>
-                                </div>
-                            </div>
-                            <div class="call-details-content-right">
-                                <span>59秒钟</span>
-                                <div class="incoming">
-                                    <img src="./assets/img/ico-sound.png" alt="">
-                                    <span>呼入电话</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                            <div class="call-details-content-box clearfix">
-                                <div class="call-details-content-left">
-                                    <label>
-                                        <input type="checkbox" name="check" value="3" class="checkchange">
-                                    </label>
-                                    <div class="message">
-                                        <h4>2017/12/19</h4>
-                                        <p>10:23</p>
-                                    </div>
-                                </div>
-                                <div class="call-details-content-right">
-                                    <span>59秒钟</span>
-                                    <div class="incoming">
-                                        <img src="./assets/img/ico-sound.png" alt="">
-                                        <span>呼入电话</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
             </ul>
-        </div>
-        <div class="call-details-container clearfix">
-            <div class="call-details-container-check call-details-container-del">
-                <img src="./assets/img/ico-sound.png" alt="">
-                <span>删除</span>
-            </div>
-            <div class="call-details-container-check call-details-container-all">
-                <img src="./assets/img/ico-sound.png" alt="">
-                <span>全选</span>
-            </div>
         </div>
     </div>
     <div class="common-footer-fourth" id="common-footer-fourth">
@@ -134,13 +84,13 @@
                 <span>电话本</span>
             </a>
         </div>
-        <div class="common-tabbar common_tabbar_now clearfix">
+        <div class="common-tabbar clearfix">
             <a href="callRecord.html">
                 <img src="assets/img/ico_03.png" alt="">
                 <span>通话记录</span>
             </a>
         </div>
-        <div class="common-tabbar clearfix">
+        <div class="common-tabbar common_tabbar_now clearfix">
             <a href="#">
                 <img src="assets/img/ico_03.png" alt="">
                 <span>语音留言</span>
@@ -174,18 +124,18 @@
 
         //监听音频播放完毕事件  
         audio.addEventListener('ended', function () {
-            
+
             $(".circle").css("width", 0);
         }, false);
 
         function Play() {
             audio.play();
             TimeSpan();
-        } 
+        }
 
         function Pause() {
             audio.pause();
-            
+
         }
 
         function TimeSpan() {
@@ -230,24 +180,24 @@
     })  
 </script>
 <script>
-    (function () {
-        let containerAll = $(".call-details-container-all");
-        let containerDle = $('.call-details-container-del');
-        containerAll.on('click', function () {
-            $(".call-details-content :checkbox").prop("checked", true);
-        })
+        (function () {
+            let containerAll = $(".details-message-container-all");
+            let containerDle = $('.details-message-container-del');
+            containerAll.on('click', function () {
+                $(".details-message-content :checkbox").prop("checked", true);
+            })
 
-        containerDle.on('click', function () {
-            chkRemove()
-        });
-
-        function chkRemove() { 
-            let chk_value = [];
-            $('input[name="check"]:checked').each(function () {
-                chk_value.push($(this).val());
+            containerDle.on('click', function () {
+                chkRemove()
             });
-            alert(chk_value.length == 0 ? '您还没有选择任何内容！' : chk_value);
-        }
 
-    })();
+            function chkRemove() {
+                let chk_value = [];
+                $('input[name="check"]:checked').each(function () {
+                    chk_value.push($(this).val());
+                });
+                alert(chk_value.length == 0 ? '您还没有选择任何内容！' : chk_value);
+            }
+
+        })();
 </script>

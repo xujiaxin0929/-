@@ -138,6 +138,10 @@ textarea {
   resize: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 input[type="radio"] {
   margin: 3px 3px 0px 5px;
   display: none;
@@ -162,6 +166,10 @@ input[type="radio"] {
 html {
   height: 100%;
   background-color: #f5f5f5;
+}
+
+img {
+  border: none;
 }
 
 .show {
@@ -1110,4 +1118,907 @@ html {
 #phone-dial .phone-dial-model-call .model-call-confirm .confirm {
   color: #00c200;
   float: right;
+}
+
+#voice-message .voice-message-list {
+  display: none;
+  background-color: #fff;
+  margin-top: 0.26667rem;
+  padding: 0rem 0.37333rem 0rem 0.85333rem;
+}
+
+#voice-message .voice-message-list ul li {
+  border-bottom: 0.01333rem solid #f1f1f1;
+  padding-bottom: 0.32rem;
+  position: relative;
+  padding-top: 0.26667rem;
+}
+
+#voice-message .voice-message-list ul li:nth-last-child(1) {
+  border: none;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-left {
+  float: left;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-left p {
+  font-size: 0.4rem;
+  color: #333333;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-left p .call-state {
+  width: 0.4rem;
+  height: 0.41333rem;
+  position: absolute;
+  top: 0.32rem;
+  left: -0.50667rem;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-left p span {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-left p .call-tape {
+  width: 0.28rem;
+  height: 0.45333rem;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-left span {
+  display: block;
+  margin-top: 0.18667rem;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-right {
+  float: right;
+  margin-top: 0.26667rem;
+  color: #999999;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-right .call-seected {
+  width: 0.58667rem;
+  height: 0.58667rem;
+  vertical-align: middle;
+  margin-left: 0.18667rem;
+  display: none;
+}
+
+#voice-message .voice-message-list ul li .voice-message-list-right .inline-show {
+  display: inline-block;
+}
+
+#call-rec .call-rec-list {
+  display: none;
+  background-color: #fff;
+  margin-top: 0.26667rem;
+  padding: 0rem 0.37333rem 0rem 0.85333rem;
+}
+
+#call-rec .call-rec-list ul li {
+  border-bottom: 0.01333rem solid #f1f1f1;
+  padding-bottom: 0.32rem;
+  position: relative;
+  padding-top: 0.26667rem;
+}
+
+#call-rec .call-rec-list ul li:nth-last-child(1) {
+  border: none;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-left {
+  float: left;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-left p {
+  font-size: 0.4rem;
+  color: #333333;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-left p .call-state {
+  width: 0.4rem;
+  height: 0.41333rem;
+  position: absolute;
+  top: 0.32rem;
+  left: -0.50667rem;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-left p span {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-left p .call-tape {
+  width: 0.28rem;
+  height: 0.45333rem;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-left span {
+  display: block;
+  margin-top: 0.18667rem;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-right {
+  float: right;
+  margin-top: 0.26667rem;
+  color: #999999;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-right .call-seected {
+  width: 0.58667rem;
+  height: 0.58667rem;
+  vertical-align: middle;
+  margin-left: 0.18667rem;
+  display: none;
+}
+
+#call-rec .call-rec-list ul li .call-rec-list-right .inline-show {
+  display: inline-block;
+}
+
+#details-message .details-message-head {
+  height: 4.82667rem;
+  background: pink;
+  width: 100%;
+  position: relative;
+}
+
+#details-message .details-message-head .details-message-head-left {
+  position: absolute;
+  bottom: 0rem;
+  left: 0.42667rem;
+}
+
+#details-message .details-message-head .details-message-head-left h2 {
+  font-size: 0.64rem;
+  color: #fff;
+  margin-bottom: 0.32rem;
+}
+
+#details-message .details-message-head .details-message-head-left span {
+  display: block;
+  font-size: 0.48rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+#details-message .details-message-head .details-message-head-right {
+  position: absolute;
+  bottom: 0rem;
+  right: 0.42667rem;
+}
+
+#details-message .details-message-head .details-message-head-right a span {
+  display: inline-block;
+  font-size: 0.4rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+  margin-left: 0.13333rem;
+}
+
+#details-message .details-message-head .details-message-head-right a img {
+  width: 0.50667rem;
+  height: 0.50667rem;
+  vertical-align: top;
+}
+
+#details-message .details-message-content {
+  padding: 0 0.42667rem;
+  background-color: #fff;
+}
+
+#details-message .details-message-content ul li {
+  padding: 0.4rem 0;
+  border-bottom: 0.01333rem solid #f1f1f1;
+}
+
+#details-message .details-message-content ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left {
+  float: left;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left input[type="checkbox"] {
+  -webkit-appearance: none;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left input[type="checkbox"] {
+  -webkit-appearance: none;
+  background: #fff url(../img/ico-edit.png);
+  background-size: 100%;
+  width: 0.58667rem;
+  height: 0.58667rem;
+  vertical-align: middle;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left input[type="checkbox"]:checked {
+  background: #fff url(../img/ico-micro.png);
+  background-size: 100%;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left input {
+  display: inline-block;
+  margin-top: -0.88rem;
+  margin-right: 0.34667rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left .message {
+  display: inline-block;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left .message h4 {
+  font-size: 0.4rem;
+  color: #333333;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-left .message p {
+  font-size: 0.4rem;
+  color: #999999;
+  margin-top: 0.34667rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-right {
+  float: right;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-right span {
+  display: block;
+  font-size: 0.4rem;
+  color: #999999;
+  text-align: right;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-right .incoming {
+  margin-top: 0.18667rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-right .incoming img {
+  width: 0.4rem;
+  height: 0.41333rem;
+  margin-right: 0.13333rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-box .details-message-content-right .incoming span {
+  display: inline-block;
+  color: #666666;
+  font-size: 0.4rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video {
+  margin-top: 0.4rem;
+  padding-left: 0.8rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .gif {
+  float: left;
+  margin-right: 0.21333rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .gif img {
+  width: 0.45333rem;
+  height: 0.72rem;
+  margin-top: 0.17333rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .right {
+  float: left;
+  position: relative;
+  width: 7.6rem;
+  height: 1.06667rem;
+  border-radius: 0.53333rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .right .click-audio {
+  position: absolute;
+  height: 100%;
+  border-top-left-radius: 0.53333rem;
+  border-bottom-left-radius: 0.53333rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .right .click-audio img {
+  float: left;
+  width: 0.34667rem;
+  height: 0.48rem;
+  margin-left: 0.29333rem;
+  margin-right: 0.08rem;
+  margin-top: 0.26667rem;
+  vertical-align: middle;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .right .click-audio span {
+  float: left;
+  display: block;
+  height: 100%;
+  line-height: 1.06667rem;
+  color: #fff;
+  font-size: 0.34667rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .right .audio-time {
+  position: absolute;
+  right: 0.24rem;
+  height: 100%;
+  line-height: 1.06667rem;
+  font-size: 0.34667rem;
+  color: #999999;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .right #touchline {
+  height: 1.06667rem;
+  background-color: #f5f5f5;
+  width: 100%;
+  border-radius: 0.26667rem;
+}
+
+#details-message .details-message-content ul li .details-message-content-video .voice .right #touchline .circle {
+  width: 0;
+  height: 1.06667rem;
+  background-color: #54da3f;
+  border-radius: 0.26667rem;
+}
+
+#bind-device {
+  padding: 0 0.4rem;
+}
+
+#bind-device .bind-device-content {
+  text-align: center;
+  margin-top: 1.06667rem;
+}
+
+#bind-device .bind-device-content img {
+  width: 2.69333rem;
+  height: 2.69333rem;
+}
+
+#bind-device .bind-device-content p {
+  font-size: 0.4rem;
+  color: #666666;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+
+#bind-device .bind-device-btn {
+  width: 100%;
+  background-color: #017aff;
+  font-size: 0.48rem;
+  color: #fff;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  margin-top: 0.82667rem;
+  outline: none;
+  border: none;
+  border-radius: 0.13333rem;
+}
+
+#scan-success {
+  padding: 0 0.4rem;
+}
+
+#scan-success .scan-success-content {
+  text-align: center;
+  margin-top: 1.06667rem;
+}
+
+#scan-success .scan-success-content img {
+  width: 2.69333rem;
+  height: 2.69333rem;
+}
+
+#scan-success .scan-success-content p {
+  font-size: 0.48rem;
+  color: #333333;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+
+#scan-success .scan-success-box {
+  background-color: #fff;
+  border-radius: 0.13333rem;
+  -webkit-appearance: none;
+  box-shadow: 1.06667rem 0rem 1.33333rem -1.10667rem #000, -1.33333rem 0rem 1.33333rem -1.14667rem #000;
+  margin-top: 0.46667rem;
+  padding: 0 0.32rem;
+}
+
+#scan-success .scan-success-box ul li {
+  display: block;
+  border-bottom: 0.01333rem solid #f5f5f5;
+  line-height: 1.17333rem;
+}
+
+#scan-success .scan-success-box ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+#scan-success .scan-success-box ul li p {
+  display: block;
+  float: left;
+  color: #333333;
+  font-size: 0.37333rem;
+  line-height: 1.17333rem;
+}
+
+#scan-success .scan-success-box ul li span {
+  display: block;
+  float: right;
+  color: #999999;
+  font-size: 0.34667rem;
+  line-height: 1.2rem;
+}
+
+#scan-success .scan-success-btn {
+  width: 100%;
+  background-color: #017aff;
+  font-size: 0.48rem;
+  color: #fff;
+  height: 1.17333rem;
+  text-align: center;
+  line-height: 1.17333rem;
+  margin-top: 0.82667rem;
+  outline: none;
+  border: none;
+  border-radius: 0.13333rem;
+}
+
+#scan-success .scan-success-btn a {
+  color: #fff;
+}
+
+#bind-success {
+  padding: 0 0.4rem;
+}
+
+#bind-success .bind-success-content {
+  text-align: center;
+  margin-top: 1.06667rem;
+}
+
+#bind-success .bind-success-content img {
+  width: 2.69333rem;
+  height: 2.69333rem;
+}
+
+#bind-success .bind-success-content p {
+  font-size: 0.48rem;
+  color: #333333;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+
+#bind-success .bind-success-box {
+  background-color: #fff;
+  border-radius: 0.13333rem;
+  -webkit-appearance: none;
+  box-shadow: 1.06667rem 0rem 1.33333rem -1.10667rem #000, -1.33333rem 0rem 1.33333rem -1.14667rem #000;
+  margin-top: 0.46667rem;
+  padding: 0 0.32rem;
+}
+
+#bind-success .bind-success-box ul li {
+  display: block;
+  border-bottom: 0.01333rem solid #f5f5f5;
+  line-height: 1.17333rem;
+}
+
+#bind-success .bind-success-box ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+#bind-success .bind-success-box ul li p {
+  display: block;
+  float: left;
+  color: #333333;
+  font-size: 0.37333rem;
+  line-height: 1.17333rem;
+}
+
+#bind-success .bind-success-box ul li span {
+  display: block;
+  float: right;
+  color: #999999;
+  font-size: 0.34667rem;
+  line-height: 1.2rem;
+}
+
+#bind-success .bind-success-btn {
+  width: 100%;
+  background-color: #ff6666;
+  font-size: 0.48rem;
+  color: #fff;
+  height: 1.17333rem;
+  text-align: center;
+  line-height: 1.17333rem;
+  margin-top: 0.82667rem;
+  outline: none;
+  border: none;
+  border-radius: 0.13333rem;
+}
+
+#bind-success .bind-success-btn a {
+  color: #fff;
+}
+
+#untie-success {
+  padding: 0 0.4rem;
+}
+
+#untie-success .untie-success-content {
+  text-align: center;
+  margin-top: 1.06667rem;
+}
+
+#untie-success .untie-success-content img {
+  width: 2.69333rem;
+  height: 2.69333rem;
+}
+
+#untie-success .untie-success-content p {
+  font-size: 0.48rem;
+  color: #333333;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+
+#untie-success .untie-success-btn {
+  width: 100%;
+  background-color: #017aff;
+  font-size: 0.48rem;
+  color: #fff;
+  height: 1.17333rem;
+  text-align: center;
+  line-height: 1.17333rem;
+  margin-top: 0.82667rem;
+  outline: none;
+  border: none;
+  border-radius: 0.13333rem;
+}
+
+#untie-success .untie-success-btn a {
+  color: #fff;
+}
+
+#phone-book .phone-book-bookbar {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 0.30667rem;
+  padding-bottom: 0.26667rem;
+  position: relative;
+}
+
+#phone-book .phone-book-bookbar .phone-book-bookbar-search {
+  border-radius: 0.13333rem;
+  width: 7.2rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  border: none;
+  position: relative;
+  height: 0.74667rem;
+}
+
+#phone-book .phone-book-bookbar .phone-book-bookbar-search input {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  width: 6.02667rem;
+  border-radius: 0.13333rem;
+}
+
+#phone-book .phone-book-bookbar .phone-book-bookbar-search .phone-book-search-text {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -0.6rem;
+}
+
+#phone-book .phone-book-bookbar .phone-book-bookbar-search .phone-book-search-text img {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#phone-book .phone-book-bookbar .phone-book-bookbar-search .phone-book-search-text span {
+  font-size: 0.32rem;
+  color: #999999;
+  display: inline-block;
+  margin-left: 0.13333rem;
+  line-height: 0.74667rem;
+}
+
+#phone-book .phone-book-bookbar .phone-book-bookbar-add {
+  width: 0.45333rem;
+  height: 0.45333rem;
+  position: absolute;
+  left: 0.42667rem;
+  top: 0.45333rem;
+}
+
+#phone-book .phone-book-bookbar .phone-book-bookbar-del {
+  width: 0.6rem;
+  height: 0.53333rem;
+  position: absolute;
+  right: 0.37333rem;
+  top: 0.45333rem;
+}
+
+#phone-book .phone-book-list {
+  display: none;
+  margin-top: 0.26667rem;
+  padding: 0rem 0.4rem;
+  margin-bottom: 2.66667rem;
+}
+
+#phone-book .phone-book-list .phone-book-list-title {
+  font-size: 0.4rem;
+  color: #666666;
+  margin: 0.21333rem 0;
+  margin-left: 0.32rem;
+}
+
+#phone-book .phone-book-list ul {
+  background-color: #fff;
+  padding: 0 0.21333rem;
+  border-radius: 0.13333rem;
+  padding-left: 0.32rem;
+}
+
+#phone-book .phone-book-list ul li {
+  border-bottom: 0.01333rem solid #f1f1f1;
+  padding-bottom: 0.32rem;
+  position: relative;
+  padding-top: 0.26667rem;
+}
+
+#phone-book .phone-book-list ul li:nth-last-child(1) {
+  border: none;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-left {
+  float: left;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-left p {
+  font-size: 0.4rem;
+  color: #333333;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-left p span {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-right {
+  float: right;
+  color: #999999;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-right .call-seected {
+  width: 0.58667rem;
+  height: 0.58667rem;
+  vertical-align: middle;
+  margin-left: 0.18667rem;
+  display: none;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-right .checkchange {
+  display: none;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-right .inline-show {
+  display: inline-block;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-right input[type="checkbox"] {
+  -webkit-appearance: none;
+  margin-left: 0.18667rem;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-right input[type="checkbox"] {
+  -webkit-appearance: none;
+  background: #fff url(../img/ico-wait-no.png);
+  background-size: 100%;
+  width: 0.58667rem;
+  height: 0.58667rem;
+  vertical-align: middle;
+}
+
+#phone-book .phone-book-list ul li .phone-book-list-right input[type="checkbox"]:checked {
+  background: #fff url(../img/ico-wait-y.png);
+  background-size: 100%;
+}
+
+#phone-book .phone-book-container {
+  height: 1.30667rem;
+  background-color: #fff;
+  position: fixed;
+  bottom: 1.6rem;
+  width: 100%;
+}
+
+#phone-book .phone-book-container .phone-book-container-btn {
+  text-align: center;
+  height: 100%;
+  line-height: 1.30667rem;
+  display: none;
+}
+
+#phone-book .phone-book-container .phone-book-container-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#phone-book .phone-book-container .phone-book-container-btn a img {
+  width: 0.45333rem;
+  height: 0.45333rem;
+  vertical-align: middle;
+  margin-top: -0.05333rem;
+}
+
+#phone-book .phone-book-container .phone-book-container-btn a span {
+  display: inline-block;
+  font-size: 0.4rem;
+  color: #999999;
+  margin-left: 0.13333rem;
+}
+
+#phone-book .phone-book-container .phone-book-container-check {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  line-height: 1.28rem;
+  float: left;
+  padding-top: 0.16rem;
+  box-sizing: border-box;
+  display: none;
+}
+
+#phone-book .phone-book-container .phone-book-container-check:nth-of-type(2) img {
+  width: 0.36rem;
+  height: 0.48rem;
+}
+
+#phone-book .phone-book-container .phone-book-container-check:nth-of-type(3) img {
+  width: 0.42667rem;
+  height: 0.42667rem;
+}
+
+#phone-book .phone-book-container .phone-book-container-check img {
+  vertical-align: middle;
+  display: block;
+  margin-bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 0.08rem;
+}
+
+#phone-book .phone-book-container .phone-book-container-check span {
+  display: block;
+  font-size: 0.4rem;
+  color: #999999;
+  line-height: 1;
+}
+
+#phone-book .phone-book-anchor {
+  position: fixed;
+  right: 0.22667rem;
+  top: 2.6rem;
+}
+
+#phone-book .phone-book-anchor li {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+#phone-book .phone-book-anchor li a {
+  color: #999999;
+  font-size: 0.32rem;
+}
+
+#new-contact {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+#new-contact .new-contact-box {
+  padding: 0 0.32rem;
+  background-color: #fff;
+  border-radius: 0.13333rem;
+  -webkit-appearance: none;
+  box-shadow: 1.33333rem 0rem 0.8rem -1.6rem #000, -1.33333rem 0rem 0.8rem -1.6rem #000;
+}
+
+#new-contact .new-contact-box ul li {
+  display: block;
+  border-bottom: 0.01333rem solid #f5f5f5;
+  height: 1.2rem;
+}
+
+#new-contact .new-contact-box ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+#new-contact .new-contact-box ul li img {
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  vertical-align: middle;
+  margin-bottom: 0.08rem;
+}
+
+#new-contact .new-contact-box ul li p {
+  display: inline-block;
+  color: #333333;
+  font-size: 0.37333rem;
+  line-height: 1.17333rem;
+  margin-left: 0.16rem;
+}
+
+#new-contact .new-contact-box ul li input {
+  display: inline-block;
+  width: 6.98667rem;
+  height: 100%;
+  float: right;
+  color: #666666;
+  font-size: 0.34667rem;
+  border: none;
+}
+
+#new-contact .new-contact-box ul li input::-webkit-input-placeholder {
+  color: #999999;
+}
+
+#new-contact .new-contact-box ul li input:-moz-placeholder {
+  　color: #999999;
+}
+
+#new-contact .new-contact-box ul li input::-moz-placeholder {
+  　color: #999999;
+}
+
+#new-contact .new-contact-box ul li input:-ms-input-placeholder {
+  　color: #999999;
+}
+
+#new-contact .new-contact-btn {
+  width: 9.2rem;
+  height: 1.2rem;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+}
+
+#new-contact .new-contact-btn button {
+  width: 100%;
+  height: 100%;
+  line-height: 1.2rem;
+  color: #fff;
+  border-radius: 0.13333rem;
+  border: none;
+  text-align: center;
+}
+
+#new-contact .new-contact-preservation {
+  margin-top: 0.8rem;
+}
+
+#new-contact .new-contact-preservation button {
+  background-color: #017aff;
+  font-size: 0.48rem;
+}
+
+#new-contact .new-contact-cancle {
+  margin-top: 0.29333rem;
+}
+
+#new-contact .new-contact-cancle button {
+  background-color: #ff6666;
+  font-size: 0.48rem;
 }

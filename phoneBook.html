@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>电话本</title>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/js/flexible_css.js"></script>
+    <script src="assets/js/flexible.js"></script>
+    <!-- <script src="assets/js/common.js"></script> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="phone-book" id="phone-book">
+        <div class="phone-book-bookbar ">
+            <a href="">
+                <img src="./assets/img/ico-add.png" class="phone-book-bookbar-add" alt="">
+            </a>
+            <div class="phone-book-bookbar-search clearfix">
+                <input type="text">
+                <div class="phone-book-search-text">
+                    <img src="./assets/img/ico-search.png" alt="">
+                    <span>搜索</span>
+                </div>
+            </div>
+            <img src="./assets/img/ico-kdel.png" class="phone-book-bookbar-del" alt="">
+        </div>
+        <div class="phone-book-list show">
+            <p class="phone-book-list-title">
+                <a name='T1'>A</a>
+            </p>
+            <ul>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>安先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="1" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>爱先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="2" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <p class="phone-book-list-title">
+                <a name='T2'>B</a>
+            </p>
+            <ul>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>白先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="3" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>币先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="4" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <p class="phone-book-list-title">
+                <a name='T3'>C</a>
+            </p>
+            <ul>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>菜先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="5" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>葱先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="6" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <p class="phone-book-list-title">
+                <a name='T4'>D</a>
+            </p>
+            <ul>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>德先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="7" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>诞先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="8" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <p class="phone-book-list-title">
+                <a name='T5'>E</a>
+            </p>
+            <ul>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>恶先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="9" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="phone-book-list-left">
+                        <p>
+                            <span>鹅先生</span>
+                        </p>
+                    </div>
+                    <div class="phone-book-list-right">
+                        <a href="callDetails.html">
+                            <img src="./assets/img/ico-edit.png" alt="" class="call-seected inline-show">
+                        </a>
+                        <label>
+                            <input type="checkbox" name="check" value="10" class="checkchange">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="phone-book-container clearfix">
+            <div class="phone-book-container-btn show">
+                <a href="phoneDial.html">
+                    <img src="./assets/img/ico-call.png" alt="">
+                    <span>话机拨号</span>
+                </a>
+            </div>
+            <div class="phone-book-container-check phone-book-container-del">
+                <img src="./assets/img/ico-del.png" alt="">
+                <span>删除</span>
+            </div>
+            <div class="phone-book-container-check phone-book-container-all">
+                <img src="./assets/img/ico-all.png" alt="">
+                <span>全选</span>
+            </div>
+        </div>
+        <ul class="phone-book-anchor">
+            <li>
+                <a href="#T1">A</a>
+            </li>
+            <li>
+                <a href="#T2">B</a>
+            </li>
+            <li>
+                <a href="#T3">C</a>
+            </li>
+            <li>
+                <a href="#T4">D</a>
+            </li>
+            <li>
+                <a href="#T5">E</a>
+            </li>
+            <li>
+                <a href="#T6">F</a>
+            </li>
+            <li>
+                <a href="#T7">G</a>
+            </li>
+            <li>
+                <a href="#T8">H</a>
+            </li>
+            <li>
+                <a href="#T9">I</a>
+            </li>
+            <li>
+                <a href="#T10">G</a>
+            </li>
+            <li>
+                <a href="#T11">K</a>
+            </li>
+            <li>
+                <a href="#T12">L</a>
+            </li>
+            <li>
+                <a href="#T13">M</a>
+            </li>
+            <li>
+                <a href="#T14">N</a>
+            </li>
+
+            <li>
+                <a href="#T15">Q</a>
+            </li>
+            <li>
+                <a href="#T16">R</a>
+            </li>
+            <li>
+                <a href="#T17">S</a>
+            </li>
+            <li>
+                <a href="#T18">T</a>
+            </li>
+            <li>
+                <a href="#T19">W</a>
+            </li>
+            <li>
+                <a href="#T20">X</a>
+            </li>
+            <li>
+                <a href="#T21">Y</a>
+            </li>
+            <li>
+                <a href="#T22">Z</a>
+            </li>
+        </ul>
+    </div>
+    <div class="common-footer-fourth" id="common-footer-fourth">
+        <div class="common-tabbar common_tabbar_now clearfix ">
+            <a href="#">
+                <img src="assets/img/ico-foot-blue-1.png" alt="">
+                <span>电话本</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话记录</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>语音留言</span>
+            </a>
+        </div>
+        <div class="common-tabbar clearfix">
+            <a href="#">
+                <img src="assets/img/ico_03.png" alt="">
+                <span>通话录音</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    (function () {
+        let bookbarDel = $('.phone-book-bookbar-del');
+        let callSeected = $('.call-seected');
+        let checkChange = $('.checkchange');
+        let containerBtn = $('.phone-book-container-btn');
+        let containerCheck = $('.phone-book-container-check');
+        let containerAll = $(".phone-book-container-all");
+        let containerDle = $('.phone-book-container-del');
+        bookbarDel.on('click', function () {
+            callSeected.toggleClass("inline-show");
+            checkChange.toggleClass("inline-show");
+            containerBtn.toggleClass("show");
+            containerCheck.toggleClass("show");
+        })
+        containerAll.on('click', function () {
+            $(".phone-book-list-right :checkbox").prop("checked", true);
+        })
+
+        containerDle.on('click', function () {
+            chkRemove()
+        });
+
+        function chkRemove() {
+            let chk_value = [];
+            $('input[name="check"]:checked').each(function () {
+                chk_value.push($(this).val());
+            });
+            alert(chk_value.length == 0 ? '您还没有选择任何内容！' : chk_value);
+        }
+
+    })();
+</script>
